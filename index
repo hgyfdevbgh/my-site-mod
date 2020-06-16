@@ -1,0 +1,505 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Личный кабинет</title>
+<link rel="icon" href="img/Fevicon.png" type="image/png">
+<link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+<link rel="stylesheet" href="vendors/linericon/style.css">
+<link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
+<link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header_area navbar_fixed">
+<div class="main_menu">
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="container box_1620">
+<a class="navbar-brand" href="index.html"><h2 style="margin-top: 15%">modromanceclub.</h2></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+<ul class="nav navbar-nav menu_nav justify-content-end">
+<li class="nav-item"><a class="nav-link" href="/">Главная</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</header>
+
+<section class="hero-banner-sm magic-ball magic-ball-banner" id="parallax-1" data-anchor-target="#parallax-1" data-300-top="background-position: 0px -80px" data-top-bottom="background-position: 0 100px">
+<div class="container">
+<div class="hero-banner-sm-content">
+<h1 id="userName">Виктория Петренко</h1>
+<p>Добро пожаловать!</p>
+</div>
+</div>
+</section>
+
+
+<section class="blog_area section-margin-large">
+<div class="container">
+<div class="row">
+<div class="col-lg-8 mb-5 mb-lg-0">
+<div class="blog_left_sidebar">
+<article class="blog_item">
+<div class="blog_details">
+<h3 id="checkHeader"> Вы выполнили инструкцию, мод должен работать</h3>
+<p style="margin-bottom: 0px;" id="checkText3" class="like-info"><span class="align-middle"><i id="checkIcon3" class="fa fa-question-circle"></i></span> Вы установили мод на телефон</p>
+<p id="checkText1" class="like-info" style="margin-bottom: 0px; color: green;"><span class="align-middle"><i id="checkIcon1" class="fa fa-check-circle"></i></span> Вы активировали подписку</p>
+<p id="checkText2" class="like-info" style="margin-bottom: 0px; color: green;"><span class="align-middle"><i id="checkIcon2" class="fa fa-check-circle"></i></span> Вы привязали аккаунт</p>
+</div>
+</article>
+<article class="blog_item" style="display:none;">
+<div class="blog_details">
+<a href="#linkAccount">Привязка аккаунта</a><br>
+<a href="#restoreSaves">Перенос прогресса</a><br>
+<a href="#installOnAndroid">Установка на Android</a><br>
+<a href="#installOnIOS">Установка на iOS</a>
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a class="d-inline-block" name="linkAccount">
+<h2>Привязка аккаунта</h2>
+</a>
+<br>
+<p>Для того, чтобы в моде заработали чашки и алмазы, вам необходимо переписать новый UID из инструментов в моде в поле выше.
+<b>Ещё раз обратите внимание, что UID нужно переписать тот, что указан В УЖЕ УСТАНОВЛЕННОМ МОДЕ.</b>
+</p>
+<input id="userUID" type="text" class="form-control" maxlength="24" placeholder="Настройки > Инструменты > UID">
+<br>
+<button class="button rounded-0 primary-bg text-white w-100" id="sButton" type="submit">Сохранить</button>
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a class="d-inline-block" name="restoreSaves">
+<h2>Перенос прогресса</h2>
+</a>
+<br>
+<p>Если вы установили мод, а ваш прогресс не сохранился, воспользуйтесь данным инструментом.<br>
+Перепишите UID со скриншота, сделанного до установки, в соответствующее поле ниже.<br>
+Осталось только нажать "Сохранить" и перезайти в игру!</p>
+<input id="restoreSavings" type="text" maxlength="24" class="form-control" placeholder="Откуда">
+<br>
+<button class="button rounded-0 primary-bg text-white w-100" id="restoreSavingsButton" type="submit">Сохранить</button>
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a class="d-inline-block" name="restoreSaves">
+<h2>Пригласи друзей</h2>
+</a>
+<br>
+<p>Поделись ссылкой этой на мод с друзьями, а когда они оплатят подписку - получи на счет 10 рублей, которые можно будет вывести на QIWI-кошелек!</p>
+<input id="inviteLink" readonly="" type="text" maxlength="24" class="form-control" placeholder="...">
+</div>
+</article>
+<article class="blog_item" style="display:none">
+<div class="blog_details">
+<a class="d-inline-block" name="whyNegativeNumbers">
+<h2>Почему значения алмазов и чашек отрицательны в моде?</h2>
+</a>
+<br>
+<p>Если после установки мода значения алмазов и чашек стали отрицательны, то это значит, что вы допустили ошибку при выполнении инструкции.</p>
+ <p>Мод отображает противоположные значения в том случае, если он не смог проверить, есть ли у этого аккаунта подписка. Есть следующие критерии:</p>
+<b>1. </b>Подписка куплена (вы пополнили счёт на 69 рублей и нажали "Продлить") и в графе "Дата окончания подписки" стоит дата, которая ещё не наступила.<br>
+<b>2. </b>UID в личном кабинете указан корректно и он полностью совпадает с тем, что указан у вас в приложении на данный момент.<br>
+<b>3. </b>Установлена последняя версия мода, которую вы могли скачать по ссылке именно с этой страницы.
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a class="d-inline-block" name="installOnAndroid">
+<h2>Как установить мод на Android</h2>
+</a>
+<br>
+<b>1.</b> Заходим в Клуб Романтики
+<br>
+<b>2.</b> Заходим в Настройки &gt; Инструменты &gt; UID
+<br>
+<b>3.</b> Скриншотим. <i>важно: сохраняем его на тот случай, если слетит прогресс</i>
+<br>
+<b>4.</b> Удаляем Клуб Романтики
+<br>
+<b>5.</b> Скачиваем и устанавливаем мод <i><a href="https://storage.yandexcloud.net/modr/latestMod.apk">[ссылка]</a></i>
+<br>
+<b>6.</b> Переписываем новый UID из настроек в моде в поле привязки аккаунта на этой странице.
+<br>
+<b>6.1. Если у вас слетел прогресс:</b> пролистываем вверх и используем инструмент для переключения аккаунтов
+<br>
+<b>7.</b> Покупаем подписку, иначе попросту не пустит. <b>Важно! После пополнения счёта необходимо нажать кнопку "Продлить подписку".</b>
+<br>
+</div>
+</article>
+<article class="blog_item" style="display:none;">
+<div class="blog_details">
+<a class="d-inline-block" name="installOnIOS">
+<h2>Как установить мод на iOS (способ #1)</h2>
+</a>
+<br>
+<br>
+<b>Обратите внимание! </b>Перед началом выполнения инструкции необходимо выйти из серии в меню игры.
+<br>
+<p>Первым делом, вам в любом случае нужно установить сертификат. Ссылку на него вы можете найти под инструкцией.
+ <br>Перейдите по ссылке и нажмите "Разрешить".
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic1.jpg">
+<br>
+<br>
+<br>
+<p>Далее, вам необходимо подтвердить установку сертификата.
+<br>Для этого перейдите в Настройки &gt; Основное &gt; Профиль &gt; Сертификат &gt; Установить:
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic2.jpg">
+<br>
+<br>
+<br>
+<p>После этого нужно сделать сертификат доверенным.
+<br>Для этого перейдите в Настройки &gt; Об этом устройстве &gt; Доверие сертификатов &gt; Сертификат &gt; Переключатель:
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic3.jpg">
+<br>
+<br>
+<br>
+<p>Следующим шагом станет установка профиля для работы мода с мобильным интернетом.
+<br>Выберите профиль для своего оператора. Ссылку сможете найти там же, под инструкцией.
+<br>Перейдите по ссылке и нажмите "Разрешить", после чего повторите шаги, предпринятые при установке сертификата.
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic4.jpg">
+<br>
+<br>
+<br>
+<p>Теперь мы настроим мод для работы с Wi-Fi, если вам это необходимо.
+<br>Для этого перейдите в Настройки &gt; Wi-Fi &gt; Ваша Wi-Fi сеть &gt; i &gt; Настройка прокси,
+<br>выберите "Автоматически" и впишите в поле: https://modr.club/proxy
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic5.jpg">
+<br>
+<br>
+<br>
+<p>Осталось переписать новый UID из игры (Настройки &gt; Инструменты) в поле отдела "Привязка аккаунта" на этой странице.
+<br>Можно играть!
+<b>P.S. мод конфликтует с VPN. Если вы его используете, отключите его на время.</b>
+</p>
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a class="d-inline-block" name="installOnIOS">
+<h2>Как установить мод на iOS</h2>
+</a>
+ <br>
+<b>Обратите внимание! </b>Перед началом выполнения инструкции необходимо выйти из серии в меню игры.
+<br>
+<br>
+<p>Первым делом, вам в любом случае нужно установить сертификат. Ссылку на него вы можете найти под инструкцией.
+<br>Перейдите по ссылке и нажмите "Разрешить".
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic1.jpg">
+<br>
+<br>
+<br>
+<p>Далее, вам необходимо подтвердить установку сертификата.
+<br>Для этого перейдите в Настройки &gt; Основное &gt; Профиль &gt; Сертификат &gt; Установить:
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic2.jpg">
+<br>
+<br>
+<br>
+<p>После этого нужно сделать сертификат доверенным.
+<br>Для этого перейдите в Настройки &gt; Об этом устройстве &gt; Доверие сертификатов &gt; Сертификат &gt; Переключатель:
+</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic3.jpg">
+<br>
+<br>
+<p>Следующим шагом станет установка приложения <a href="https://apps.apple.com/ru/app/dnscloak-secure-dns-client/id1452162351">DNSCloak</a> из App Store.</p>
+<p>Откройте установленное приложение, после чего в верхнем меню найдите кнопку редактирования конфигурации.</p>
+<img style="margin-top: -20px;" class="img-fluid" src="./img/pic-dns-cloak.jpg">
+<br>
+<br>
+<p>Теперь замените всё содержимое этого экрана на текст, представленный ниже.
+<br><textarea class="form-control" style="width: 100%" readonly=""># Всегда содержимое этого файла должно быть актуальным
+# Последнее изменение: 9:00 26.02.2020
+ipv4_servers = true
+ipv6_servers = true
+max_clients = 250
+dnscrypt_servers = true
+doh_servers = true
+require_dnssec = false
+require_nolog = false
+require_nofilter = false
+force_tcp = false
+tls_disable_session_tickets = false
+dnscrypt_ephemeral_keys = false
+timeout = 2500
+cert_refresh_delay = 240
+block_ipv6 = false
+cache = true
+cache_size = 256
+cache_min_ttl = 600
+cache_max_ttl = 86400
+cache_neg_ttl = 60
+fallback_resolver = "9.9.9.9:53"
+ignore_system_dns = false
+log_files_max_size = 10
+log_files_max_age = 7
+log_files_max_backups = 1
+netprobe_timeout = 0
+
+server_names = ['modr-romance-club']
+
+[static]
+ [static.'modr-romance-club']
+ stamp = 'sdns://AQcAAAAAAAAAEDY0LjIyNy42Ni4zNzo0NDMgbJNtqOXhxTX2W8VCN8R5mwVLzSfdPL00f_jO1Er86MsdMi5kbnNjcnlwdC1jZXJ0LmRucy5tb2RyLmNsdWI'</textarea>
+</p>
+<br>
+<p>Теперь выйдите из этого раздела, выберите на "modr-romance-club" и нажмите на появившуюся кнопку.</p>
+<p>После следования инструкциям системы, пойдет процесс запуска сервиса. Рекомендуется перезапустить приложение, если это будет длиться долго.</p>
+<p>Осталось переписать новый UID из игры (Настройки &gt; Инструменты) в поле отдела "Привязка аккаунта" на этой странице.
+<br><br>Можно играть!
+</p>
+</div>
+</article>
+<article class="blog_item">
+<div class="blog_details">
+<a href="https://storage.yandexcloud.net/modr/rootCA.crt">Скачать сертификат</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.mts.ru&amp;username=mts&amp;password=mts&amp;carrier=МТС">Скачать профиль для МТС</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.beeline.ru&amp;username=beeline&amp;password=beeline&amp;carrier=Билайн">Скачать профиль для Билайн</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.tele2.ru&amp;username=&amp;password=&amp;carrier=Tele2">Скачать профиль для Tele2</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet&amp;username=gdata&amp;password=gdata&amp;carrier=Мегафон">Скачать профиль для Мегафон</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.yota&amp;username=&amp;password=&amp;carrier=Yota">Скачать профиль для Yota</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet&amp;username=&amp;password=&amp;carrier=Activ">Скачать профиль для Activ</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=inet.ycc.ru&amp;username=motiv&amp;password=motiv&amp;carrier=MOTIV">Скачать профиль для MOTIV</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.letai.ru&amp;username=&amp;password=&amp;carrier=Летай">Скачать профиль для Летай</a><br>
+<a href="https://s0.modr.club/generate.mobileconfig?apn=internet.sberbank-tele.com&amp;username=&amp;password=&amp;carrier=СберМобайл">Скачать профиль для СберМобайл</a>
+</div>
+</article>
+<nav style="margin-top: -15%" class="blog-pagination justify-content-center d-flex">
+</nav>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="blog_right_sidebar">
+<aside class="single_sidebar_widget search_widget" id="adminPanelLink" style="display:none">
+<a href="/dashboard"><button class="button rounded-0 primary-bg text-white w-100" type="submit">Админ-панель</button></a>
+</aside>
+<aside class="single_sidebar_widget search_widget">
+<h3 id="userBalance">Ваш баланс: 0 рублей</h3>
+<br>
+<input id="topupSum" type="number" class="form-control" value="69" placeholder="Пополнение счёта">amp;successUrl=https://vk.com/modromanceclub
+<br>32PxDN9emZua5VfPsmXsUEn9gsdsxdZCf5[themeCode]=DENDhtYS-RxpXay2u7O&amp;amount=69&amp;account=497158959&direct_uri%3tps%3A%2F%2Fs0.modr.club%2Fauth">
+<button class="button rounded-0 primary-bg text-white w-100" type="submit">Пополнить через QIWI</button>
+<a id="paymentLink" href="https://qiwi.com/n/CLUBROMANTIKI
+<form method="POST" action="https://money.yandex.ru/quickpay/confirm.xml" id="yaForm" style="margin-top: 5px;">
+<input type="hidden" name="receiver" value="410017752201104">
+<input type="hidden" name="formcomment" value="Пополнение счёта Petrenkov123456">
+<input type="hidden" name="short-dest" value="Пополнение счёта Petrenkov123456">
+<input type="hidden" id="yaLabel" name="label" value="497158959">
+<input type="hidden" name="quickpay-form" value="shop">
+<input type="hidden" name="targets" value="Petrenkov123456">
+<input type="hidden" id="yaTopup" name="sum" value="69" data-type="number">
+<input type="hidden" id="yaComment" name="comment" value="Пополнение счёта Petrenkov123456">
+<input type="hidden" name="need-fio" value="false">
+<input type="hidden" name="need-email" value="true">
+<input type="hidden" name="need-phone" value="false">
+<input type="hidden" name="need-address" value="false">
+<button class="button rounded-0 primary-bg text-white w-100" type="submit">Пополнить через Яндекс</button>
+</form>
+</a>
+</aside>
+<aside class="single_sidebar_widget search_widget">
+<p id="userSubscription">Дата окончания подписки: <b>01.07.2020, 23:52:13</b></p>
+<button class="button rounded-0 primary-bg text-white w-100" id="pButton" type="submit">Продлить</button>
+</aside>
+<aside class="single_sidebar_widget">
+<div id="vk_groups" style="width: 300px; height: 162px; background: none;"><iframe name="fXD18eb2" frameborder="0" src="https://vk.com/widget_community.php?app=0&amp;width=300px&amp;_ver=1&amp;gid=187134682&amp;mode=1&amp;color1=&amp;color2=&amp;color3=5098B7&amp;class_name=&amp;url=https%3A%2F%2Fmodr.club%2Fcabinet.html%3Fuser_id%3D497158959%26verification%3D5287fc872fdd8fdecc439f1789a8eb0e%26data%3DeyJpZCI6MjI5NDQ2LCJuYW1lIjoi0JLQuNC60YLQvtGA0LjRjyDQn9C10YLRgNC10L3QutC%2BIiwic3Vic2NyaXB0aW9uRW5kcyI6IjE1OTM2MTE1MzMwODgiLCJiYWxhbmNlIjowLCJ1aWQiOiIxMzgzMDRpZDk5ZmQxYTdlMzU1ZDU4ZWMiLCJjaGVja3MiOlt0cnVlLHRydWVdLCJhZG1pbkF1dGhLZXkiOm51bGx9&amp;referrer=https%3A%2F%2Fs0.modr.club%2Fauth%3Fcode%3D75e78e4caaabbfb084&amp;title=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82&amp;172a96d288b" width="300" height="141" scrolling="no" id="vkwidget2" style="overflow: hidden; height: 162px;"></iframe></div>
+</aside>
+<aside class="single_sidebar_widget search_widget" id="deleteModAccount" style="display:none">
+<button class="button rounded-0 primary-bg text-white w-100" id="deleteModAccountButton" type="submit">Удалить аккаунт в моде</button>
+</aside>
+<script>
+                      const authPageUrl = 'https://oauth.vk.com/authorize?client_id=7185012&redirect_uri=https://s0.modr.club/auth'
+                      var code
+                      var user_id
+
+                      function getJsonFromUrl(url) {
+                        if(!url) url = location.search
+
+                        let query = url.substr(1)
+                        let result = {}
+
+                        query.split('&').forEach(part => {
+                          var item = part.split('=')
+                          result[item[0]] = decodeURIComponent(item[1])
+                        })
+
+                        return result
+                      }
+
+                      function b64_to_utf8(str) {
+                        return decodeURIComponent(escape(window.atob(str)))
+                      }
+
+                      window.onload = () => {
+                        let query = getJsonFromUrl()
+                        let massData = JSON.parse(b64_to_utf8(query.data))
+                        code = query.verification
+                        user_id = query.user_id
+
+                        $('#userName')[0].innerHTML = massData.name
+                        $('#userBalance')[0].innerHTML = `Ваш баланс: ${massData.balance} рублей`
+                        $('#userSubscription')[0].innerHTML = massData.subscriptionEnds == 0 ? 'Дата окончания подписки: <i>у вас нет активной подписки</i>' : `Дата окончания подписки: <b>${new Date(Number(massData.subscriptionEnds)).toLocaleString()}</b>`
+                        $('#userUID')[0].value = massData.uid || ''
+                        $('#inviteLink')[0].value = massData.uid = 'https://modr.club/#' + massData.id
+                        $('#yaLabel')[0].value = query.user_id
+                        $('#yaForm')[0].style = 'margin-top: 5px'omponentzVyTBuND4HprW6FXLFGDpEVtbwjmkmEAj7FWquRxuXRUr4z87d64wx4NuSAEqZs6b97r2bQ9G6SXzsv&customFields[themeCode]=DENYS-RxpXay2u7O&amount=69&account=${query.user_id}&successUrl=${encodeURIC(authPageU
+                        $('#paymentLink')[0].href = `https://oplata.qiwi.com/create?publicKey=7d2e83fd98d9ebd771a2b8344b2f421a
+                        $('#topupSum')[0].onchange = () => {
+                          $('#yaTopup')[0].value = $('#topupSum')[0].valueTVhYm
+                          $('#paymentLink')[0].href = `https://oplata.qiwi.com/create?publicKey=7d2e83fd98d9ebd771a2b8344b2f421a{$('#topupSum')[0].value}&account=${query.user_id}&successUrl=${encodeURIComponent(authPageUrl)}`
+                        }
+
+                        if(massData.uid && false) {
+                          $('#deleteModAccount')[0].style = ''
+                          $('#deleteModAccountButton')[0].onclick = () => {
+                            $.ajax({
+                              method: 'POST',
+                              url: 'https://s0.modr.club/api/deleteMODAccount',
+                              data: {verification: code, user_id}
+                            }).done(resp => {
+                              if(resp.error)
+                                return alert('Ошибка: ' + resp.desc)
+
+                              if(resp.success)
+                                alert('Успех!')
+                                window.location.href = authPageUrl
+                            }) 
+                          }
+                        }
+
+                        if(massData.adminAuthKey) {
+                          $('#adminPanelLink')[0].style = ''
+                          localStorage.setItem('authKey', massData.adminAuthKey)
+                        }
+
+                        if(massData.checks[0] && massData.checks[1]){
+                          $('#checkHeader')[0].innerHTML = ' Вы выполнили инструкцию, мод должен работать'
+                        } else {
+                          $('#checkHeader')[0].innerHTML = ' Инструкция не выполнена, мод может не работать'
+                        }
+                        
+                        if(massData.checks[0]){
+                          $('#checkText1')[0].innerHTML += ' Вы активировали подписку'
+                          $('#checkText1')[0].style = 'margin-bottom: 0px;color:green'
+                          $('#checkIcon1').attr('class', 'fa fa-check-circle')
+                        } else {
+                          $('#checkText1')[0].innerHTML += ' Вы НЕ активировали подписку'
+                          $('#checkText1')[0].style = 'margin-bottom: 0px;color:red'
+                          $('#checkIcon1').attr('class', 'fa fa-times-circle')
+                        }
+
+                        if(massData.checks[1]){
+                          $('#checkText2')[0].innerHTML += ' Вы привязали аккаунт'
+                          $('#checkText2')[0].style = 'margin-bottom: 0px;color:green'
+                          $('#checkIcon2').attr('class', 'fa fa-check-circle')
+                        } else {
+                          $('#checkText2')[0].innerHTML += ' Вы НЕ привязали аккаунт'
+                          $('#checkText2')[0].style = 'margin-bottom: 0px;color:red'
+                          $('#checkIcon2').attr('class', 'fa fa-times-circle')
+                        }
+                        
+                        $('#checkText3')[0].style = 'margin-bottom: 0px'
+
+                        $('#pButton')[0].onclick = () => {
+                          $.ajax({
+                            method: 'POST',
+                            url: 'https://s0.modr.club/api/renewSubscription',
+                            data: {verification: code, user_id}
+                          }).done(resp => {
+                            if(resp.error)
+                              return alert('Ошибка: ' + resp.desc)
+
+                            if(resp.success)
+                              alert('Успех!')
+                              window.location.href = authPageUrl
+                          }) 
+                        }
+
+                        $('#restoreSavingsButton')[0].onclick = () => {
+                          let uid = $('#restoreSavings')[0].value
+
+                          if(uid.length == 24)
+                            $.ajax({
+                              method: 'POST',
+                              url: 'https://s0.modr.club/api/restoreSaves',
+                              data: {verification: code, user_id, uid}
+                            }).done(resp => {
+                              if(resp.error)
+                                return alert('Ошибка: ' + resp.desc)
+
+                              if(resp.success)
+                                alert('Успех!')
+                                window.location.href = authPageUrl
+                            })
+                          else
+                            alert('В UID должно быть 24 символа!')
+                        }
+
+                        $('#sButton')[0].onclick = () => {
+                          let uid = $('#userUID')[0].value
+
+                          if(uid.length == 24)
+                            $.ajax({
+                              method: 'POST',
+                              url: 'https://s0.modr.club/api/setUID',
+                              data: {verification: code, user_id, uid}
+                            }).done(resp => {
+                              if(resp.error)
+                                return alert('Ошибка: ' + resp.desc)
+
+                              if(resp.success)
+                                alert('Успех!')
+                                window.location.href = authPageUrl
+                            })
+                          else
+                            alert('В UID должно быть 24 символа!')
+                        }
+                      }
+                    </script>
+</div>px 20px; background: none;"><iframe name="fXD6c8b6" frameborder="0" src="https://vk.com/widget_community_messages.php?app=0&amp;width=300px&am
+</div>
+</div>
+</div>
+</section>
+
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+<div id="vk_community_messages" style="width: 50px; height: 50px; position: fixed; z-index: 10000; bottom: 0px; right: 20px; margin: 0px 0p;_ver=1&amp;gid=187134682&amp;shown=1&amp;disable_welcome_screen=1&amp;ref_source_info=undefined&amp;ref_source_link=https%3A%2F%2Fmodr.club%2Fcabinet.html%3Fuser_id%3D497158959%26verification%3D5287fc872fdd8fdecc439f1789a8eb0e%26data%3DeyJpZCI6MjI5NDQ2LCJuYW1lIjoi0JLQuNC60YLQvtGA0LjRjyDQn9C10YLRgNC10L3QutC%2BIiwic3Vic2NyaXB0aW9uRW5kcyI6IjE1OTM2MTE1MzMwODgiLCJiYWxhbmNlIjowLCJ1aWQiOiIxMzgzMDRpZDk5ZmQxYTdlMzU1ZDU4ZWMiLCJjaGVja3MiOlt0cnVlLHRydWVdLCJhZG1pbkF1dGhLZXkiOm51bGx9&amp;tooltip_text=%D0%95%D1%81%D1%82%D1%8C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%3F&amp;domain=modr.club&amp;button_position=undefined&amp;height=399&amp;url=https%3A%2F%2Fmodr.club%2Fcabinet.html%3Fuser_id%3D497158959%26verification%3D5287fc872fdd8fdecc439f1789a8eb0e%26data%3DeyJpZCI6MjI5NDQ2LCJuYW1lIjoi0JLQuNC60YLQvtGA0LjRjyDQn9C10YLRgNC10L3QutC%2BIiwic3Vic2NyaXB0aW9uRW5kcyI6IjE1OTM2MTE1MzMwODgiLCJiYWxhbmNlIjowLCJ1aWQiOiIxMzgzMDRpZDk5ZmQxYTdlMzU1ZDU4ZWMiLCJjaGVja3MiOlt0cnVlLHRydWVdLCJhZG1pbkF1dGhLZXkiOm51bGx9&amp;referrer=https%3A%2F%2Fs0.modr.club%2Fauth%3Fcode%3D75e78e4caaabbfb084&amp;title=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82&amp;172a96d288a" width="50" height="50" scrolling="no" id="vkwidget1" style="overflow: hidden; box-shadow: none;"></iframe></div>
+<script type="text/javascript">
+    if(!location.href.includes('file:///'))
+      VK.Widgets.CommunityMessages("vk_community_messages", 187134682, {expanded: "1", tooltipButtonText: "Есть вопрос?"});
+    VK.Widgets.Group("vk_groups", {mode: 1, color3: '5098B7', width: '300'}, 187134682);
+  </script>
+<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="vendors/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+<script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/mail-script.js"></script>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body></html>
